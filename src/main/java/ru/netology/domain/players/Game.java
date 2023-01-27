@@ -3,7 +3,7 @@ package ru.netology.domain.players;
 import java.util.ArrayList;
 
 public class Game {
-    ArrayList<Player> regPlayers = new ArrayList<>();
+    private ArrayList<Player> regPlayers = new ArrayList<>();
     
     public void register(Player player) {
         regPlayers.add(player);
