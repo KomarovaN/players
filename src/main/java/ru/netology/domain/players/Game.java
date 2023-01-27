@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Game {
     ArrayList<Player> regPlayers = new ArrayList<>();
-    Player player1 = new Player();
-    Player player2 = new Player();
-
+    
     public void register(Player player) {
         regPlayers.add(player);
     }
 
     public int round(String playerName1, String playerName2) {
+        Player player1 = new Player();
+        Player player2 = new Player();
         player1 = findByName(playerName1);
         player2 = findByName(playerName2);
         if (player1 != null) {
